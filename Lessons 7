@@ -1,0 +1,160 @@
+/*
+    მოცემულია რიცხვი, ავღწეროთ ცვლადი even. თუ მოცემული რიცხვი ლუწია აღწერილი ცვლადში ჩავწეროთ 0 თუ არა და 1
+*/
+
+{
+    int a;
+    int even;
+    
+    a = 2
+    even = a % 2
+}
+
+/*
+    მოცემულია მთელი დადებითი რიცხვი n. 
+    result ცვლადში მოვათავსოთ მოცემული რიცხვის შემდეგ მდგომი ლუწი რიცხვი
+
+       Examples:
+       Input        |   Output
+           2        |   4
+       Input        |   Output
+           7        |   8
+*/   
+
+{
+    int number;
+    int remainder;
+    int result;
+    
+    number = 2;
+    
+    remainder = number % 2;
+    result = (number - remainder) + 2;
+}
+
+/*
+    N მოსწავლე იყოფს K ვაშლს თანაბრად. მორჩენილი ვაშლები რჩება ისევ კალათაში.
+    რამდენი ვაშლი დარჩება კალათაში?
+
+    Input Data
+    პროგრამა იღებს ორ მთელ რიცხვს N და K
+    Output Data
+    აღვწეროთ ცვლადი result და მოვათავსოთ ვაშლების რაოდენოა
+
+    Examples:
+    Input           |   Output
+        3 14        |   2
+*/
+
+{
+    int N; 
+    int K; 
+    int result;
+
+    N = 3;
+    K = 14;
+
+    result = K % N;
+}
+
+/*
+    N მოსწავლე იყოფს K ვაშლს თანაბრად. მორჩენილი ვაშლები რჩება ისევ კალათაში.
+    რამდენი ვაშლი შეხვდება თითოეულ მოსწავლეს?
+
+    Input Data
+    პროგრამა იღებს ორ მთელ რიცხვს N და K
+    Output Data
+    აღვწეროთ ცვლადი result და მოვათავსოთ ვაშლების რაოდენოა
+
+    Examples:
+    Input           |   Output
+        3 14        |   4
+
+*/   
+
+{
+    int N;
+    int K;
+    int result;
+
+    K = 14;
+    N = 3;
+
+    result = K / N;  
+}
+
+/*
+     მოცემულია 3 ნიშნა რიცხვი. გამოვყოთ მისი ათეულების ციფრი.
+     Examples:
+     Input          |   Output
+        127         |   2
+*/
+
+{
+    int a;
+    int result;
+
+    a = 123;
+
+    result = a / 10 % 10;
+}
+
+/*
+    მოცემულია 4 ნიშნა რიცხვი. დავთვალოთ მისი ციფრების ჯამი.
+    Examples:
+    Input           |   Output
+        1234        |   10
+*/
+
+{
+    int n;   
+    int a;
+    int b;
+    int c;
+    int d;
+    int result;
+
+    n = 1234;
+
+    a = n % 10; // 4
+    b = n % 100 / 10; // 3
+    c = n % 1000 / 100; // 2
+    d = n / 1000; // 1
+    result = a + b + c + d; 
+}
+
+/*
+      მოცემულია 4 ნიშნა რიცხვი. დავთვალოთ მისი ლუწი ციფრების ჯამი.
+      Examples:
+      Input         |   Output
+           1234     |   6
+*/
+
+{
+    int a;
+    int b;
+    int c;
+    int d;
+    int n;
+    int result;
+
+    n = 2344;
+
+    a = n % 10;
+    b = n % 100 / 10;
+    c = n % 1000 / 100;
+    d = n % 10000 / 1000;
+
+    int r1 = 1 - a % 2;
+    int r2 = 1 - b % 2;
+    int r3 = 1 - c % 2;
+    int r4 = 1 - d % 2;
+
+    int f1 = a * r1;
+    int s2 = b * r2;
+    int t3 = c * r3;
+    int f4 = d * r4;
+    
+
+    result = f1 + s2 + t3 + f4;  
+}

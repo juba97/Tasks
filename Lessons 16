@@ -1,0 +1,144 @@
+/*
+    მეტეოროლოგმა ჩაიწერა მზის ამოსვლის და ჩასვლის დროები წამების სიზუსტით. 
+    თითოეული ჩანაწერი მოცემულია ჰარით გაყოფილი სამი მთელი A , B და C რიცხვებით, 
+    რომლებიც შესაბამისად აღნიშნავენ საათს, წუთსა და წამს (1 ≤ A ≤ 23; 0 ≤ B, C ≤ 59). დაწერეთ 
+    პროგრამა, რომელიც გამოითვლის რამდენი წამი გავიდა დროის ამ ორ მომენტს შორის.
+    input      output
+    7 14 35 |  36639
+   17 25 14 |    
+*/
+
+{
+    int A;
+    int B;
+    int C;
+    int A1;
+    int B1;
+    int C1;
+
+    A = 7;
+    B = 14;
+    C = 35;
+
+    A1 = 17;
+    B1 = 25;
+    C1 = 14;
+
+    int x;
+    int y;
+
+    x = (A * 3600) + (B * 60) + C;
+    y = (A1 * 3600) + (B1 * 60) + C1;
+    int r;
+    r = y - x;
+}
+
+/*
+    Write a program in C# Sharp to display the multiplication table of a given integer.
+*/
+
+{
+    int j = 0;
+    int n = 6;
+
+    for (j = 1; j <= 10; j++)
+    {
+        Console.Write("{0} X {1} = {2} \n", n, j, n * j);     
+    }
+}
+
+/*
+    Write a program in C# Sharp to display the n terms of odd natural number and their sum.
+*/
+
+{
+    int odd = 1;
+    int sum = 0;
+    for (int i = 0; i < 5; i+=2)
+    {
+        odd = odd + 2;
+        Console.WriteLine("Odd is " + odd);
+        sum = sum + odd;
+    }
+    Console.WriteLine();
+    Console.WriteLine("Sum is " + sum);
+}
+
+/*
+    Write a program in C# Sharp to display the n terms of Even natural number and their sum.
+*/
+
+{
+    int even = 0;
+    int sum = 0;
+    for (int i = 1; i < 10; i+=2)
+    {
+        even = even + 2;
+        Console.WriteLine("Even is " + even);
+        sum = sum + even;
+
+    }
+    Console.WriteLine();
+    Console.WriteLine("Sum is " + sum);
+}
+
+/*
+    Write a program in C# Sharp to display the pattern like right angle triangle using an asterisk.
+    outout 
+    *
+    **
+    ***
+    ****
+    *****
+*/
+
+{
+    int i, j, rows;
+    rows = 5;
+    for (i = 1; i <= rows; i++)
+    {
+        for (j = 1; j <= i; j++)
+            Console.Write("*");
+        Console.Write("\n");
+    }
+}
+
+/*
+     Write a program in C# Sharp to display the pattern like right angle triangle with a number.
+     output
+     1
+     12
+     123
+     1234
+     12345
+*/
+
+{
+    int i, j, rows;
+    rows = 5;
+    for (i = 1; i <= rows; i++)
+    {
+        for (j = 1; j <= i; j++)
+            Console.Write(j);
+        Console.Write("\n");
+    }
+}
+
+/*
+    Write a program in C# Sharp to make such a pattern like right angle triangle with a number which will repeat a number in a row.
+    output
+    1
+    22
+    333
+    4444
+*/
+
+{
+    int i, j, rows = 5;
+    for (i = 1; i <= rows; i++)
+    {
+        for (j = 1; j <= i; j++)
+            Console.Write(i);
+        Console.Write("\n");
+    }
+}

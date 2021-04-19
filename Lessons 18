@@ -1,0 +1,118 @@
+/*
+    იპოვეთ სამ რიცხვს შორის მაქსიმალური ტერნარული ოპერატორის (Ternary Operator) გამოყენებით
+    input    output
+    1 2 7  |    7
+    5 9 3  |    9
+*/
+
+{
+  int a = 5;
+  int b = 6;
+  int c = 7;
+
+  int result = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+  Console.WriteLine(result);
+}
+
+/*
+    დაწერეთ გამოცდის შეფასების პროგრამა, (მაქსიმალური ქულა 100, მინიმალური ქულა 21).
+    
+    * თუ სტუდენტი აიღებს 21 -ზე ნაკლებ ქულას ის ჩაიჭრება.
+    * თუ სტუდენტი აიღებს 21 -ზე მეტს და 80 -ზე ნაკლებს, ის ჩააბარებს მაგრამ ვერ მიიღებს დაფინანსებას.
+    * თუ სტუდენტი აიღებს 80 -ზე მეტს და 90 -ზე ნაკლებს, ის ჩააბარებს და მიიღებს 50% -იან დაფინანსებას.
+    * თუ სტუდენტი აიღებს 90 -ზე მეტს და 95 -ზე ნაკლებს, ის ჩააბარებს და მიიღებს 70% -იან დაფინანსებას.
+    * თუ სტუდენტი აიღებს 95 -ზე მეტს, ის ჩააბარებს და მიიღებს 100% დაფინანსებას
+*/
+
+{
+    Console.Write("Enter the points score - ");
+    int score = int.Parse(Console.ReadLine());
+    int a = 21;
+    int b = 80;
+    int c = 90;
+    int d = 95;
+
+    if (score < a)
+    {
+        Console.WriteLine("You failed the exam");
+    }
+    else if (score < b)
+    {
+        Console.WriteLine("You passed the exam but could not get funding");
+    }
+    else if (score >= b && score <= c)
+    {
+        Console.WriteLine("You pass the exam and get 50% funding");
+    }
+    else if (score >= c && score <= d)
+    {
+        Console.WriteLine("You pass the exam and get 70% funding");
+    }
+    else if (score >= d && score <= 100)
+    {
+        Console.WriteLine("You pass the exam and get 100% funding");
+    }
+    else
+    {
+        Console.WriteLine("Maximum score of the test is 100");
+    }
+}
+
+/*
+    შეამოწმეთ კონსოლიდან შემოყვანილი რიცხვი კენტია თუ ლუწი, 
+    იმ შემთხვევაში თუ შემოყვანილი რიცხვი იქნება 0 კონსოლმა დაწეროს რომ შემოყვანილი რიცხვი არის 0.
+*/
+
+{
+    Console.Write("Enter the number - ");
+    int num = int.Parse(Console.ReadLine());
+
+    if (num % 2 != 0)
+    {
+        Console.WriteLine("Number is odd");
+    }
+    else if (num == 0)
+    {
+        Console.WriteLine("Number entered is zero");
+    }
+    else
+    {
+        Console.WriteLine("Number is even");
+    }
+}
+
+/*
+    დაწერეთ პროგრამა რიცხვზე რომელიც იყოფა 11 -ზე და 5 -ზე
+*/
+
+{
+    Console.Write("Enter the number - ");
+    int Number = int.Parse(Console.ReadLine());
+
+    if (Number % 5 == 0 && Number % 11 == 0)
+    {
+        Console.WriteLine("Divided by 11 and 5");
+    }         
+    else
+    {
+        Console.WriteLine("Not divided");
+    }
+}
+
+/*
+    დაწერეთ პროგრამა Switch case -ით რომელიც შეამოწმებს რიცხვი კენტია თუ ლუწი
+*/
+
+{
+    Console.Write("Enter the number : ");
+    int x = int.Parse(Console.ReadLine());
+    switch (x % 2)
+    {
+        case 0:
+            Console.WriteLine($"{x} is an even value");
+            break;
+        case 1:
+            Console.WriteLine($"{x} is an odd Value");
+            break;
+     }
+}
