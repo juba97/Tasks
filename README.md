@@ -2,11 +2,6 @@
                                                                                      
 ![](https://www.theengineeringprojects.com/wp-content/uploads/2018/02/introduction-to-data-types-in-C-1.png)
 
-
-> **The below figure illustrates the execution steps of the for loop.**  
-
-![](https://www.tutorialsteacher.com/Content/images/csharp/for-loop.png)
-
  ```C#
         int i;
         i = 0;
