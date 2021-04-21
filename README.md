@@ -35,3 +35,7 @@
 | True   | False  | False         
 | False  | False  | True  
 | False  | True   | True  
+
+> **The below figure illustrates the execution steps of the for loop.**  
+
+![](https://www.tutorialsteacher.com/Content/images/csharp/for-loop.png)
