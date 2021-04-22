@@ -26,6 +26,5 @@
     }
     Console.WriteLine();
     Console.WriteLine("Odd  Sum : " + sumOdd);
-    Console.WriteLine("Even Sum : " + sumEven);
-    
+    Console.WriteLine("Even Sum : " + sumEven);   
 }
