@@ -28,3 +28,19 @@
     Console.WriteLine("Odd  Sum : " + sumOdd);
     Console.WriteLine("Even Sum : " + sumEven);   
 }
+
+/*
+    მომხმარებელს შემოყავს რიცხვები, და პროგრამამ უნდა დაადგინოს რამდენი რიცხვია შემოყვანილი
+*/
+
+{
+    Console.Write("Enter the number : ");
+    int user = int.Parse(Console.ReadLine());
+    int mag = 0;
+    while (user > 0)
+    {
+        mag++;
+        user /= 10;
+    }
+    Console.WriteLine("Magnitude: " + mag);
+}
