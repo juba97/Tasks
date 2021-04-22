@@ -34,7 +34,7 @@
 */
 
 {
-    Console.Write("Enter the number : ");
+    Console.Write("Enter the numbers : ");
     int user = int.Parse(Console.ReadLine());
     int mag = 0;
     while (user > 0)
