@@ -44,3 +44,23 @@
     }
     Console.WriteLine("Magnitude: " + mag);
 }
+
+/*
+    დაწერეთ პროგრამა რომელიც დათვლის N ციფრების ჯამს (While Cycle)
+*/
+
+{
+    int n; 
+    int m;
+    int sum = 0;
+
+    Console.Write("Enter a number: ");
+    n = int.Parse(Console.ReadLine());
+    while (n > 0)
+    {
+        m = n % 10;
+        sum = sum + m;
+        n = n / 10;
+    }
+    Console.Write("Sum is = " + sum);
+}
