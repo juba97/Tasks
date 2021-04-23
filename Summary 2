@@ -3,3 +3,24 @@ Selections Loop = შერჩევას აკეთებს კითხვ
 For Loop = ერთი და იგივე კითხვას უსვამ სანამ გარკვეული ამოცანა არ შესრულდება
 Nested for Loops = ჩადგმული For ციკლი
 Nested while Loops = გარე მარყუჟის ყოველი განმეორებით, შიდა მარყუჟი სრულად ასრულებს ყველა გამეორებას.
+
+/*
+    Nested while Loops
+*/
+{
+    int i = 0;
+    while (i <= 2)
+    {
+        Console.WriteLine($"Outer -> {i}");
+
+        i++;
+
+        int j = 1;
+
+        while (j <= 2)
+        {
+            Console.WriteLine($"    Inner-> {j}");
+            j++;
+        }
+    }
+}
