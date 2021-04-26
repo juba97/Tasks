@@ -1,0 +1,40 @@
+/*
+    დაწერეთ პროგრამა რომელიც შეაბრუნებს ციფრებს (do.. While) -ის გამოყენებით
+    input   output
+     127  |   721
+*/
+
+{
+    int n;
+    int remainder;
+    n = 127;
+    Console.WriteLine("Number: " + n);
+    Console.Write("Number in reverse order: ");
+    do
+    {
+        remainder = n % 10;
+        Console.Write(remainder);
+        n = n / 10;
+    } while (n > 0);
+    Console.WriteLine();
+}
+
+/*
+    დაწერეთ პროგრამა რომელიც დათვლის N ციფრების ჯამს (do..While) -ის გამოყენებით
+    input    output
+    127   |  10
+*/
+
+{
+    int n = 127;
+    int remainder;
+    int sum = 0;
+    Console.WriteLine($"Number: {n}");
+    do
+    {
+        remainder = n % 10;
+        sum = sum + remainder;
+        n = n / 10;
+    } while (n > 0);
+    Console.WriteLine($"Sum of digits: {sum}");
+}
