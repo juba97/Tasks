@@ -82,3 +82,32 @@
             break;
     }
 }
+
+/*
+    დაწერეთ პროგრამა რომელიც დაადგენს რამდენი ლუწი ციფრია, შეყვანილი სამი ციფრიდან
+*/
+
+{
+    Console.WriteLine("Enter three number\n");
+    Console.Write("Enter first number: ");
+    int NumA = int.Parse(Console.ReadLine());
+    Console.Write("Enter second number: ");
+    int NumB = int.Parse(Console.ReadLine());
+    Console.Write("Enter third number: ");
+    int NumC = int.Parse(Console.ReadLine());
+    int Even = 0;
+
+    if (NumA % 2 == 0)
+    {
+        Even++;
+        if (NumB % 2 == 0)
+        {
+            Even++;
+            if (NumC % 2 == 0)
+            {
+                Even++;
+            }
+        }
+    }  
+    Console.WriteLine($"Even numbers is: {Even}");
+}
