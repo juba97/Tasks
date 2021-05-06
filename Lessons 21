@@ -6,21 +6,21 @@
 */
 
 {
-   static void Main()
-  {
-      Console.Write("Enter World: ");      
-      Words();
-
-  }
-  static void Words()
-  {
-      string Word = Console.ReadLine();
-      Console.Write("Number of words in a sentence: ");      
-      int Mag = 0;
-      foreach (var word in Word)
-      {
-          Mag++; 
-      }
-      Console.WriteLine(Mag);
-  }
+    static void Main()
+    {
+            Console.Write("Enter Words: ");
+            Words();
+    }
+    
+    static void Words()
+    {
+        string word = Console.ReadLine();
+        Console.Write("Number of words in a sentence: ");      
+        int mag = 0 ;
+        foreach (var words in word)
+        {
+            mag++; 
+        }
+        Console.WriteLine(mag);
+    }
 }
