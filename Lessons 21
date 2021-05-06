@@ -17,7 +17,7 @@
       string Word = Console.ReadLine();
       Console.Write("Number of words in a sentence: ");      
       int Mag = 0;
-      foreach (char word in Word)
+      foreach (var word in Word)
       {
           Mag++; 
       }
