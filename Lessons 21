@@ -1,0 +1,26 @@
+/*
+    დაწერეთ Method -ი რომელსაც გადასცემთ რაიმე ფრაზას და Method -ი დააბრუნებს ამ ფრაზაში შესული ასოების რაოდენობას.
+    input    output
+    ABC    |   3
+    ABCDEF |   6
+*/
+
+{
+   static void Main()
+  {
+      Console.Write("Enter World: ");      
+      Words();
+
+  }
+  static void Words()
+  {
+      string Word = Console.ReadLine();
+      Console.Write("Number of words in a sentence: ");      
+      int Mag = 0;
+      foreach (char word in Word)
+      {
+          Mag++; 
+      }
+      Console.WriteLine(Mag);
+  }
+}
