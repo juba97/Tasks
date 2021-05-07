@@ -24,3 +24,32 @@
         Console.WriteLine(mag);
     }
 }
+
+/*
+    დაწერეთ Function რომელიც დათვლის სამი რიცხვიდან რამდენია 10 -ზე მეტი
+*/
+
+{ 
+    static void Main(string[] args)
+    {
+        int i = CountNumber(6, 22, 33);
+        Console.WriteLine(i);
+    }            
+    static int CountNumber(int a, int b, int c)
+    {
+        int count = 0;
+        if (a > 10)
+        {
+            count++;
+        }
+        if (b > 10)
+        {
+            count++;
+        }
+        if (c > 10)
+        {
+            count++;
+        }
+        return count;
+    }
+}
