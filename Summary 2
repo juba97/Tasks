@@ -6,13 +6,15 @@
 [Class] = არის ობიექტზე ორიენტირებული კონსტრუქცია, რომელიც ეხმარება პროგრამებს ორგანიზებაში.
 [Abstraction] = აბსტრაქცია გამოიყენება არასასურველი მონაცემების დასამალად და აჩვენებს მხოლოდ საჭირო თვისებებსა და მეთოდებს.
 [Encapsulation] = ინკაფსულაცია ავალდებულებს მონაცემთა წევრებსა და წევრთა ფუნქციებს ერთ ერთეულში, რათა თავიდან აიცილოს უცხო პირების მასში პირდაპირ წვდომა.
-[Polymorphism] = 
-[Inheritance] = 
+[Formal Parameter] = მეთოდის შიგნით ცვლადს, რომელიც იღებს არგუმენტს ეწოდება ფორმალური პარამეტრი.
 
 
    Access Modifiers
       Public
       Private 
       Protected
-      Internal       
+      Internal     
       
+  Create Class Object
+Building house; // declare reference to object
+house = new Building(); // allocate a Building object
