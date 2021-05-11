@@ -16,5 +16,5 @@
       Internal     
       
   Create Class Object
-Building house; // declare reference to object
-house = new Building(); // allocate a Building object
+      Building house; // declare reference to object
+      house = new Building(); // allocate a Building object
